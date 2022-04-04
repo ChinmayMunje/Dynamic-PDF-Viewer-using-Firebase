@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "888687276465",
+    "project_id": "video-streaming-app-f7c98",
+    "storage_bucket": "video-streaming-app-f7c98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888687276465:android:7e91cf30e7b544c8ad8d90",
+        "android_client_info": {
+          "package_name": "com.gtappdevelopers.videostreamingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888687276465-b2oglm5uq5hf7ici6tv71hokdfiv1ehc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOU5A86lKv6hbl00aOnVwcldl0wF-KOQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888687276465-b2oglm5uq5hf7ici6tv71hokdfiv1ehc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

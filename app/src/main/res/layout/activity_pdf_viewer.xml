@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue_back"
+    tools:context=".PDFViewerActivity">
+
+    <LinearLayout
+        android:id="@+id/idLLHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/dark_blue_back"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="8dp"
+            android:text="Dynamic PDF Viewer App"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idLLHeading" />
+
+</RelativeLayout>

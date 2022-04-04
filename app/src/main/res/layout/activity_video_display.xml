@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue_back"
+    tools:context=".VideoDisplayActivity">
+
+    <LinearLayout
+        android:id="@+id/idLLHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/dark_blue_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/idRLVideoImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/idLLHeading">
+
+        <ImageView
+            android:id="@+id/idIVVideo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingTop="-20dp"
+            android:paddingBottom="-20dp"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/idIBPlay"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_arrow"
+            android:tint="@android:color/holo_red_light" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRLVideoImg"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/roboto"
+        android:padding="5dp"
+        android:id="@+id/idTVTitle"
+        android:text="Video Title"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVCategory"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:padding="8dp"
+        android:text="Category"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/category_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/idTVTitle"
+        android:textColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idTVCategory"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Video Description"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/idTVVideoDesc"
+            />
+
+
+    </ScrollView>
+</RelativeLayout>
